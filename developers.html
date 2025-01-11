@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Developers</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --gradient: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--gradient);
+        /* color: #333; */
+      }
+
+      .container-box {
+        /* max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+      }
+      .header p {
+        margin: 10px 0 0 0;
+        font-size: 1.2rem;
+        color: #555;
+      }
+
+      .developers {
+        display: flex;
+        width: 90%;
+        /* flex-wrap: wrap;
+        gap: 20px; */
+        justify-content: space-around;
+      }
+
+      .developer-card {
+        /* flex: 1 1 250px;
+        max-width: 250px; */
+        /* background-color: #fafafa; */
+        /* border: 1px solid #ddd; */
+        border-radius: 8px;
+        text-align: center;
+        padding: 15px;
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); */
+      }
+
+      .developer-card img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+      .developer-card h3 {
+        margin: 10px 0;
+        font-size: 1.7rem;
+      }
+
+      .developer-card p {
+        font-size: 1.2rem;
+        color: #555;
+      }
+
+      .back-button {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        /* background-color: #4caf50; */
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        width: 250px;
+      }
+
+      .back-button:hover {
+        /* background-color: #45a049; */
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-box">
+      <div class="header">
+        <h1>Meet the Developers</h1>
+        <!-- <h1>Meet the tema behind weather App</h1> -->
+        <p>The team behind the Weather App</p>
+      </div>
+      <div class="developers">
+        <!-- Developer 1 -->
+        <div class="developer-card">
+          <img src="./img/developer2.png" alt="Developer 2" />
+          <h3>Shivnandan Ray Yadav</h3>
+          <p>B.E. Geomatics, Kathmandu University</p>
+          <p>Adress: Bhaktapur, Nepal</p>
+        </div>
+        <div class="developer-card">
+          <img src="./img/developer1.png" alt="Developer 1" />
+          <h3>Nabin Kumar Sah</h3>
+          <p>B.E. Geomatics, Kathmandu University</p>
+          <p>Expertise: GIS & Remote Sensing Analyst</p>
+          <p>Adress: Dhulikhel, Kavre, Nepal</p>
+        </div>
+        <!-- Developer 2 -->
+
+        <!-- Developer 3 -->
+        <div class="developer-card">
+          <img src="./img/developer3.png" alt="Developer 3" />
+          <h3>Madhav Prasad Bhattari</h3>
+          <p>B.E. Geomatics, Kathmandu University</p>
+          <p>Surveyor at Dept. of Survey, Govt. of Nepal</p>
+          <p>Adress: Dhulikhel, Kavre.</p>
+        </div>
+      </div>
+      <a href="index.html" class="back-button">Back to Weather App</a>
+    </div>
+  </body>
+</html>
